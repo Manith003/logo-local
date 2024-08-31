@@ -16,7 +16,8 @@ body {
     width: 80%;
     max-width: auto;
     /* max-width: 1200px; Set a fixed max-width */
-    height: 100vh;
+    height: 80%;
+    max-height: auto;
     /* max-height: 800px; Set a fixed max-height */
     padding: 20px;
     border-radius: 10px; /* Uncomment if needed */
