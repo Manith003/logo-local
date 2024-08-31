@@ -9,7 +9,8 @@ body {
     font-family: "Mona Sans", sans-serif;
     background-color: #121212;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+
 }
 
 .container {
@@ -308,7 +309,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -39%);
-    font-size: 900px;
+    font-size: 800px;
     color: rgba(255, 255, 255, 0.1);
     z-index: 0;
     filter: blur(28px); /* Add blur effect */
@@ -319,17 +320,57 @@ body {
         padding: 15px;
     }
     .infinity-symbol {
-        font-size: 550px;
+        font-size: 750px;
         filter: blur(23px); /* Adjust blur for smaller screens */
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        padding: 13px;
+    }
+    .infinity-symbol {
+        font-size: 550px;
+        filter: blur(17px); /* Adjust blur for even smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 10px;
+        padding: 11px;
     }
     .infinity-symbol {
         font-size: 450px;
         filter: blur(17px); /* Adjust blur for even smaller screens */
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        padding: 9px;
+    }
+    .infinity-symbol {
+        font-size: 340px;
+        filter: blur(15px); /* Adjust blur for even smaller screens */
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        padding: 7px;
+    }
+    .infinity-symbol {
+        font-size: 280px;
+        filter: blur(13px); /* Adjust blur for even smaller screens */
+    }
+}
+
+@media (max-width: 200px) {
+    .container {
+        padding: 5px;
+    }
+    .infinity-symbol {
+        font-size: 180px;
+        filter: blur(10px); /* Adjust blur for even smaller screens */
     }
 }
