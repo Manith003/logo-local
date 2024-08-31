@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timerElement = document.getElementById('timer');
     const statusElement = document.getElementById('status');
   
-    const API_URL = 'https://logoreveal.onrender.com'; // Replace with your deployed server URL
+    const API_URL = 'https://logo-local.onrender.com/'; // Replace with your deployed server URL
 
     const updateProgress = async () => {
         try {
