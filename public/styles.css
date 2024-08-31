@@ -50,8 +50,8 @@ body {
 }
 
 #logoContainer img {
-    height: 25%;
-    width: 25%;
+    height: 17%;
+    width: 17%;
 }
 
 /* #logo {
@@ -307,11 +307,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 350px;
+    transform: translate(-50%, -39%);
+    font-size: 900px;
     color: rgba(255, 255, 255, 0.1);
     z-index: 0;
-    filter: blur(5px); /* Add blur effect */
+    filter: blur(28px); /* Add blur effect */
 }
 
 @media (max-width: 768px) {
@@ -319,8 +319,8 @@ body {
         padding: 15px;
     }
     .infinity-symbol {
-        font-size: 300px;
-        filter: blur(4px); /* Adjust blur for smaller screens */
+        font-size: 550px;
+        filter: blur(23px); /* Adjust blur for smaller screens */
     }
 }
 
@@ -329,7 +329,7 @@ body {
         padding: 10px;
     }
     .infinity-symbol {
-        font-size: 250px;
-        filter: blur(3px); /* Adjust blur for even smaller screens */
+        font-size: 450px;
+        filter: blur(17px); /* Adjust blur for even smaller screens */
     }
 }
