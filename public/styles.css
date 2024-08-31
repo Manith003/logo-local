@@ -259,8 +259,8 @@ body {
     }
 
     .loyola img {
-        height: 52px;
-        width: 52px;
+        height: 50px;
+        width: 50px;
     }
 
     .ovation {
@@ -281,8 +281,8 @@ body {
 
 @media (max-width: 480px) {
     .loyola img {
-        height: 47px;
-        width: 47px;
+        height: 43px;
+        width: 43px;
     }
 
     .ovation {
@@ -309,7 +309,6 @@ body {
     font-size: 350px;
     color: rgba(255, 255, 255, 0.1);
     z-index: 0;
-    animation: rotateInfinity 10s linear infinite;
 }
 
 @media (max-width: 768px) {
