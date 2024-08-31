@@ -14,9 +14,10 @@ body {
 .container {
     text-align: center;
     width: 80%;
-    max-width: 1200px; /* Set a fixed max-width */
-    height: 80%;
-    max-height: 800px; /* Set a fixed max-height */
+    max-width: auto;
+    /* max-width: 1200px; Set a fixed max-width */
+    height: 100vh;
+    /* max-height: 800px; Set a fixed max-height */
     padding: 20px;
     border-radius: 10px; /* Uncomment if needed */
     border: none;
