@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 body {
     display: flex;
@@ -11,14 +5,15 @@ body {
     align-items: center;
     height: 100vh;
     color: white;
-    margin: 0;
+    margin: 1px;
     font-family: "Mona Sans", sans-serif;
     background-color: #121212;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
+    margin-top: -5%;
     text-align: center;
     width: 80%;
     max-width: auto;
@@ -266,8 +261,8 @@ body {
     }
 
     .loyola img {
-        height: 50px;
-        width: 50px;
+        height: 45px;
+        width: 45px;
     }
 
     .ovation {
@@ -288,8 +283,8 @@ body {
 
 @media (max-width: 480px) {
     .loyola img {
-        height: 43px;
-        width: 43px;
+        height: 35px;
+        width: 35px;
     }
 
     .ovation {
@@ -312,10 +307,11 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjusted for better centering */
+    transform: translate(-50%, -50%);
     font-size: 350px;
     color: rgba(255, 255, 255, 0.1);
     z-index: 0;
+    filter: blur(5px); /* Add blur effect */
 }
 
 @media (max-width: 768px) {
@@ -324,6 +320,7 @@ body {
     }
     .infinity-symbol {
         font-size: 300px;
+        filter: blur(4px); /* Adjust blur for smaller screens */
     }
 }
 
@@ -333,5 +330,6 @@ body {
     }
     .infinity-symbol {
         font-size: 250px;
+        filter: blur(3px); /* Adjust blur for even smaller screens */
     }
 }
