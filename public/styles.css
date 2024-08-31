@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     color: white;
     margin: 0;
     font-family: "Mona Sans", sans-serif;
@@ -48,13 +48,13 @@ body {
 }
 
 #logoContainer img {
-    height: 15%;
-    width: 15%;
+    height: 25%;
+    width: 25%;
 }
 
-#logo {
+/* #logo {
     max-width: 100%;
-}
+} */
 
 #revealButton {
     margin-top: 20px;
