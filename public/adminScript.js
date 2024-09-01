@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusElement = document.getElementById('status');
     const videoOverlay = document.getElementById('videoOverlay'); // Add this line to get the video overlay
 
-    const API_URL = 'https://logo-local.onrender.com/admin'; // Replace with your deployed server URL
+    const API_URL = 'https://logo-local.onrender.com'; // Replace with your deployed server URL
 
     const updateProgress = async () => {
         try {
