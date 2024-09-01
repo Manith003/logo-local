@@ -124,7 +124,7 @@ body {
 }
 
 :root {
-    --color-bg1: rgb(108, 0, 162);
+    /* --color-bg1: rgb(108, 0, 162); */
     --color-bg2: rgb(0, 17, 82);
     --color1: 18, 113, 255;
     --color2: 221, 74, 255;
@@ -259,6 +259,7 @@ body {
     filter: blur(28px); /* Add blur effect */
 }
 
+
 /* Responsive Design - Smaller Screens */
 @media (max-width: 768px) {
     .container {
@@ -273,9 +274,14 @@ body {
         width: 45px;
     }
     .ovation {
-        font-size: 1.8em;
+        font-size: 2.8em;
         letter-spacing: 8px;
     }
+    #logoreveal{
+        margin-top: -10px;
+        font-size: 1.7em;
+    }
+
     #revealButton {
         font-size: 1.2rem;
         padding: 18px 40px;
@@ -306,9 +312,15 @@ body {
         width: 35px;
     }
     .ovation {
-        font-size: 1.2em;
-        letter-spacing: 6px;
+        margin-top: 13%;
+        font-size: 2.6em;
+        letter-spacing: 8px;
     }
+    #logoreveal{
+        margin-top: -10px;
+        font-size: 1.3em;
+    }
+
     #revealButton {
         font-size: 1.1rem;
         padding: 16px 38px;
@@ -340,9 +352,15 @@ body {
         width: 30px;
     }
     .ovation {
-        font-size: 1.2em;
-        letter-spacing: 5px;
+        margin-top: 15%;
+        font-size: 2.2em;
+        letter-spacing: 8px;
     }
+    #logoreveal{
+        margin-top: -10px;
+        font-size: 1.1em;
+    }
+
     #revealButton {
         font-size: 1.0rem;
         padding: 14px 36px;
@@ -373,9 +391,16 @@ body {
         width: 20px;
     }
     .ovation {
-        font-size: 1em;
-        letter-spacing: 4px;
+        margin-top: 17%;
+        font-size: 1.5em;
+        letter-spacing: 8px;
     }
+    #logoreveal{
+        margin-top: -10px;
+        font-size: 0.9em;
+    }
+
+
     #revealButton {
         font-size: 0.9rem;
         padding: 12px 34px;
@@ -548,3 +573,71 @@ body {
         height: 40px;
     }
 }
+
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    color: black;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Width for mobile devices */
+    max-width: 400px; /* Max width to ensure it doesn't get too wide on larger screens */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px; /* Adjusted for mobile view */
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive adjustments for all mobile devices */
+@media (max-width: 600px) {
+    .modal {
+        padding-top: 20px; /* Reduce padding for very small screens */
+    }
+
+    .modal-content {
+        width: 95%; /* Increase width on very small screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .close {
+        font-size: 20px; /* Slightly smaller close button on small screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .modal-content {
+        width: 85%; /* Adjust width for tablets and mid-sized screens */
+        padding: 20px; /* Standard padding for mid-sized screens */
+    }
+
+    .close {
+        font-size: 24px; /* Standard close button size for tablets */
+    }
+}
+
