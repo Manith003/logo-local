@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.getElementById('progressBar');
-    const logoContainer = document.getElementById('logoContainer');
     const timerElement = document.getElementById('timer');
     const statusElement = document.getElementById('status');
     const videoOverlay = document.getElementById('videoOverlay'); // Add this line to get the video overlay
 
-    const API_URL = 'https://logo-local.onrender.com'; // Replace with your deployed server URL
+    const API_URL = 'https://logoreveal.onrender.com'; // Replace with your deployed server URL
 
     const updateProgress = async () => {
         try {
@@ -21,12 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             timerElement.textContent = `Time left: ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 
-            if (data.revealLogo) {
-                logoContainer.style.display = 'block';
-                statusElement.textContent = 'Logo is revealed!';
-            } else {
-                statusElement.textContent = `Percentage of students clicked: ${percentage.toFixed(2)}%`;
-            }
+            statusElement.textContent = `Percentage of students clicked: ${percentage.toFixed(2)}%`;
 
             // Show the video overlay if progress reaches 100%
             if (percentage >= 100) {
