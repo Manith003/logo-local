@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('confirmationModal');
     const closeModal = document.querySelector('.modal .close');
 
-    const API_URL = 'https://logoreveal.onrender.com'; // Replace with your deployed server URL
+    // const API_URL = 'https://logo-local.onrender.com'; // Replace with your deployed server URL
 
     const updateProgress = async () => {
         try {
